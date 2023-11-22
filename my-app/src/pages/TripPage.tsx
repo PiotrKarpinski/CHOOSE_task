@@ -56,26 +56,18 @@ const TripPage: React.FC = () => {
 
     return (
         <div className="TripPageContainer">
-
             <Flex flexDirection={'column'} gap={8}>
                 <Box>
                     <Link className={'TripPageLink'} to={`/`}>Go back</Link>
-
                 </Box>
                 <Box>
                     <Heading size='lg'>{tripDetails?.title}</Heading>
                     <Text>{tripDetails?.subtitle}</Text>
                 </Box>
-
-
                 <Flex flexWrap='wrap-reverse' gap={8} justifyContent={'space-between'}>
                     <Box className="TripPage">
-
-
                         <Flex className="TripPage" flexDirection={'column'} gap={8}>
                             <Image borderRadius={15} src={tripDetails?.photoUrl}/>
-
-
                             <Heading size={'md'}>
                                 Overview
                             </Heading>
@@ -91,7 +83,6 @@ const TripPage: React.FC = () => {
                                         </Box>
                                     </Flex>
                                 ))}
-
                             </SimpleGrid>
                             <Divider/>
                             <Text>
@@ -109,11 +100,9 @@ const TripPage: React.FC = () => {
                                         <Text as={'b'}>Emissions: {tripDetails?.co2kilograms}kg CO2</Text>
                                     </Flex>
                                     <Divider/>
-
                                     <Box>
                                         <Text as={'b'}>
                                             Countries included: </Text>
-
                                         <UnorderedList className={'TripPageCountries'}>
                                             {tripDetails?.countries.map((country, index) => (
                                                 <ListItem key={index}>{country}</ListItem>
@@ -121,16 +110,12 @@ const TripPage: React.FC = () => {
                                         </UnorderedList>
                                     </Box>
                                 </Flex>
-
                             </CardBody>
                         </Card>
                     </Box>
-
                 </Flex>
             </Flex>
-
         </div>
-
     );
 }
 

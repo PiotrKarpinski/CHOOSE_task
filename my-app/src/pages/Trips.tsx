@@ -6,7 +6,6 @@ import {Skeleton, Stack} from "@chakra-ui/react";
 import {useAppDispatch, useAppSelector} from "../redux/hooks";
 import {saveTrips} from "../redux/tripsSlice";
 
-import { ScrollRestoration } from "react-router-dom";
 const Trips: React.FC = () => {
     const dispatch = useAppDispatch()
 
