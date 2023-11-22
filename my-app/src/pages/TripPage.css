@@ -1,0 +1,17 @@
+.TripPageContainer {
+ margin: 100px 20px;
+ display: flex;
+ justify-content: center;
+}
+
+.TripPage {
+ max-width: 800px;
+}
+
+.TripPageLink {
+ text-decoration: underline;
+}
+
+.TripPageCountries{
+ column-count: 2;
+}
