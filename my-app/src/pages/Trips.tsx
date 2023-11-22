@@ -17,7 +17,7 @@ const Trips: React.FC = () => {
         if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight || isLoading) {
             return;
         }
-        const nextPage = stateTrips.length / 3 + 1;
+        const nextPage = Math.ceil(stateTrips.length / 3) + 1;
         fetchData(nextPage);
     };
 
